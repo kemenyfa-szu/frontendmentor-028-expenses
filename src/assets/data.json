@@ -1,0 +1,37 @@
+[
+  {
+    "dayShort": "mon",
+    "dayLong": "Monday",
+    "amount": 17.45
+  },
+  {
+    "dayShort": "tue",
+    "dayLong": "Tuesday",
+    "amount": 34.91
+  },
+  {
+    "dayShort": "wed",
+    "dayLong": "Wednesday",
+    "amount": 52.36
+  },
+  {
+    "dayShort": "thu",
+    "dayLong": "Thursday",
+    "amount": 31.07
+  },
+  {
+    "dayShort": "fri",
+    "dayLong": "Friday",
+    "amount": 23.39
+  },
+  {
+    "dayShort": "sat",
+    "dayLong": "Saturday",
+    "amount": 43.28
+  },
+  {
+    "dayShort": "sun",
+    "dayLong": "Sunday",
+    "amount": 25.48
+  }
+]

@@ -1,0 +1,46 @@
+<section class="spendings">
+  <table>
+    <caption>
+      Spending - Last 7 days
+    </caption>
+    <tbody>
+      <tr class="flex">
+        <td class="chart" *ngFor="let day of week">
+          <div
+            class="chart-column"
+            [ngStyle]="{ height: columnHeight(day.amount) + '%' }"
+            [class.today]="isToday(day.dayShort)"
+          >
+            <p>{{ "$" + day.amount }}</p>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th scope="col" *ngFor="let day of week">
+          <dfn
+            ><abbr title="{{ day.dayLong }}">{{ day.dayShort }}</abbr></dfn
+          >
+        </th>
+      </tr>
+    </tfoot>
+  </table>
+
+  <hr />
+
+  <article class="this-month">
+    <h3>Total this month</h3>
+    <div class="monthly-numbers">
+      <div class="total">
+        <p class="spent">
+          <strong> $478.33 </strong>
+        </p>
+      </div>
+      <p class="diff">
+        <strong> +2.4% </strong>
+        from last month
+      </p>
+    </div>
+  </article>
+</section>

@@ -1,0 +1,137 @@
+.spendings {
+  background-color: var(--very-pale-orange);
+  border-radius: var(--border-radius);
+  /* padding: 1.5rem 1rem; */
+  padding: clamp(1rem, calc(0.5rem + 2vw), 2.25rem);
+
+  color: var(--dark-brown);
+}
+
+table {
+  display: flex;
+  flex-direction: column;
+}
+
+caption {
+  font-size: clamp(1.32rem, calc(1rem + 1.5vw), 1.85rem);
+  font-weight: 800;
+  text-align: left;
+}
+
+tbody {
+  flex: 1;
+  display: flex;
+  flex-direction: column-reverse;
+  min-height: 8.5rem;
+  margin-top: 3.5rem;
+}
+
+tr.flex {
+  flex: 1;
+}
+
+tr {
+  display: flex;
+  gap: 0.75rem;
+}
+
+th {
+  padding-block: 0.25rem;
+}
+
+th,
+td {
+  flex: 1;
+}
+
+td.chart {
+  display: flex;
+  align-items: flex-end;
+}
+
+abbr {
+  color: var(--medium-brown);
+  font-size: clamp(0.625rem, calc(0.3rem + 1vw), 0.875rem);
+  font-style: normal;
+  text-decoration: none;
+}
+
+.chart-column {
+  flex: 1;
+  position: relative;
+  background-color: var(--soft-red);
+  /* height: 100%; */
+  margin-inline: auto;
+  border-radius: 5px;
+}
+
+.chart-column.today {
+  background-color: var(--cyan);
+}
+
+.chart-column:hover {
+  cursor: pointer;
+  background-color: var(--soft-light-red);
+}
+.chart-column.today:hover {
+  background-color: var(--light-cyan);
+}
+
+.chart-column p {
+  position: absolute;
+  display: none;
+  text-align: center;
+  background-color: green;
+  width: calc(100% + 1rem);
+  font-size: clamp(0.7rem, calc(0.3rem + 1vw), 1rem);
+  color: var(--very-pale-orange);
+  background-color: var(--dark-brown);
+  bottom: calc(100% + 0.5rem);
+  left: -0.5rem;
+  padding-block: 0.5em;
+  border-radius: 5px;
+}
+
+.chart-column:hover p {
+  display: block;
+}
+
+hr {
+  margin-block: clamp(1rem, 2vw, 1.5rem);
+  border: none;
+  border-bottom: 2px solid var(--cream);
+}
+
+.this-month {
+  & strong {
+    display: block;
+    color: var(--dark-brown);
+    font-weight: 700;
+  }
+}
+
+.this-month h3 {
+  font-size: clamp(0.825rem, 2vw, 1rem);
+  color: var(--medium-brown);
+}
+
+.this-month .monthly-numbers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.this-month p {
+  color: var(--medium-brown);
+  font-size: 1rem;
+  font-size: 0.825rem;
+}
+
+.this-month p.spent strong {
+  font-size: clamp(1.725rem, calc(1rem + 2vw), 2.8rem);
+}
+
+.this-month p.diff {
+  font-size: clamp(0.875rem, calc(0.35rem + 1vw), 1rem);
+  text-align: right;
+}

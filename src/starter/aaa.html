@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      table {
+        margin-top: 5rem;
+        border: 1px solid dodgerblue;
+        min-width: 200px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      caption {
+        text-align: left;
+      }
+
+      tbody {
+        flex: 1;
+        display: flex;
+        flex-direction: column-reverse;
+        min-height: 15rem;
+        margin-top: 3rem;
+      }
+
+      tr.flex {
+        flex: 1;
+      }
+
+      tr {
+        display: flex;
+        gap: 1rem;
+      }
+
+      th,
+      td {
+        flex: 1;
+      }
+
+      th {
+        background-color: black;
+        color: red;
+      }
+
+      td {
+        color: blue;
+        background-color: pink;
+      }
+
+      .chart-column {
+        position: relative;
+        background-color: red;
+        height: 100%;
+        margin: auto;
+        border-radius: 5px;
+      }
+
+      p {
+        position: absolute;
+        display: none;
+        text-align: center;
+        background-color: green;
+        width: calc(100% + 1rem);
+      }
+
+      .chart-column:hover p {
+        display: block;
+        bottom: calc(100% + 0.5rem);
+        left: -0.5rem;
+        padding: 0.5em 0.75em;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption>
+        Szia mia haramia!
+      </caption>
+      <tbody>
+        <tr class="flex">
+          <td>
+            <div class="chart-column"><p>$420.69</p></div>
+          </td>
+          <td>
+            <div class="chart-column"><p>$420.69</p></div>
+          </td>
+          <td>
+            <div class="chart-column"><p>$420.69</p></div>
+          </td>
+          <td>
+            <div class="chart-column"><p>$420.69</p></div>
+          </td>
+          <td>
+            <div class="chart-column"><p>$420.69</p></div>
+          </td>
+          <td>
+            <div class="chart-column"><p>$420.69</p></div>
+          </td>
+          <td>
+            <div class="chart-column"><p>$420.69</p></div>
+          </td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th scope="col">
+            <dfn><abbr title="Monday">mon</abbr></dfn>
+          </th>
+          <th scope="col">
+            <dfn><abbr title="Tuesday">tue</abbr></dfn>
+          </th>
+          <th scope="col">
+            <dfn><abbr title="Wednesday">wed</abbr></dfn>
+          </th>
+          <th scope="col">
+            <dfn><abbr title="Thursday">thu</abbr></dfn>
+          </th>
+          <th scope="col">
+            <dfn><abbr title="Friday">fri</abbr></dfn>
+          </th>
+          <th scope="col">
+            <dfn><abbr title="Saturday">sat</abbr></dfn>
+          </th>
+          <th scope="col">
+            <dfn><abbr title="Sunday">sun</abbr></dfn>
+          </th>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
